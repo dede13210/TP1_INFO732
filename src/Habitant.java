@@ -4,6 +4,8 @@ public abstract class Habitant {
     private String prenom;
     private String adresse;
 
+
+
     public Habitant(String nnig, String nom, String prenom, String adresse) {
         this.nnig = nnig;
         this.nom = nom;
