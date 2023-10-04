@@ -25,9 +25,9 @@ public class Village {
     public ArrayList<Quartier> getListQuartier() {
         return listQuartier;
     }
-    public void afficherHabitants(String nom){
-        for(Habitant h : trouverQuartier(nom).getListHabitant()){
-            System.out.println(h.toString());
+    public void afficherQuartier(String nom){
+        for(Quartier q : listQuartier){
+            System.out.println(q.toString());
         }
     }
     public Quartier trouverQuartier(String nomQuartier){

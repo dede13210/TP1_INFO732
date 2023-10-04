@@ -18,6 +18,11 @@ public class Quartier {
     public ArrayList<String> getDrapeau() {
         return drapeau;
     }
+    public void afficherHabitants(String nom){
+        for(Habitant h : listHabitant){
+            System.out.println(h.toString());
+        }
+    }
 
     public ArrayList<Habitant> getListHabitant() {
         return listHabitant;
@@ -31,4 +36,12 @@ public class Quartier {
         return null;
     }
 
+    @Override
+    public String toString() {
+        return "Quartier{" +
+                "nom='" + nom + '\'' +
+                ", drapeau=" + drapeau +
+                ", nombre d'habitant=" + listHabitant.size() +
+                '}';
+    }
 }
