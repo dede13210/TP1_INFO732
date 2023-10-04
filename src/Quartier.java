@@ -18,7 +18,7 @@ public class Quartier {
     public ArrayList<String> getDrapeau() {
         return drapeau;
     }
-    public void afficherHabitants(String nom){
+    public void afficherHabitants(){
         for(Habitant h : listHabitant){
             System.out.println(h.toString());
         }
