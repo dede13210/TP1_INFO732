@@ -23,7 +23,6 @@ public class Main {
             objetQuartier.afficherHabitants();
             System.out.println("Rentrez le nombre de combattants à convoquer : ");
             int nbreaConvoqu = scanner.nextInt();
-            scanner.nextLine();
 
 
             for(int i=0; i<nbreaConvoqu; i++){
@@ -32,12 +31,13 @@ public class Main {
                 scanner.nextLine();
                 try {
                     objetQuartier.trouverHabitant(nnig).convoquer(message);
-                    /*convoques.add(objetQuartier.trouverHabitant(nnig));
-                    System.out.println(convoques);*/
+                    convoques.add(objetQuartier.trouverHabitant(nnig));
+
                 }catch (NullPointerException e){
                     System.out.println("habitant non trouver");
                 }
             }
+            System.out.println(convoques);
         }catch (NullPointerException e){
             System.out.println("quartier non reconnus");
         }
